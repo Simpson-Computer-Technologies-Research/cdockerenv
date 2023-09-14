@@ -10,8 +10,7 @@ Docker environment and files for C program
  * Name: Program Name
  * Author: Your Name
  * Function: What does this program do?
- * Compilation: gcc -std=c99 -Wall -o build/main src/main.c
- * Execution: ./build/main
+ * Compilation and Execution: make
  */
 
 int main(int argc, char *argv[])
