@@ -2,7 +2,7 @@
 Docker environment and files for C program
 
 ### main.c
-```
+```c
 #include <stdio.h>
 #include "../utils/string.h"
 
