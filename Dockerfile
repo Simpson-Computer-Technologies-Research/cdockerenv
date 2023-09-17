@@ -1,16 +1,14 @@
-# Dockerfile for main.c found in /src
+# Dockerfile for C
 FROM gcc:latest
 
-# Copy the source code to the container
-COPY Makefile Makefile
+# Set the working directory to /app
+WORKDIR /app
 
-COPY /src /src
-COPY /static /static
-COPY /utils /utils
-COPY /build /build
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-# Set the working directory to /
-WORKDIR /
+# To build the image, run the following command in the directory containing the Dockerfile
+# docker build -t cis1300 .
 
-# Run the makefile to execute the program
-RUN make
+# To run the container, run the following command
+# docker run -it --rm --name cis1300 cis1300
