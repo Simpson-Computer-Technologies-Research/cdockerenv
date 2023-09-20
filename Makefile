@@ -16,8 +16,8 @@ make_build:
 
 # Compile the main.c file into the build directory
 output:
-	$(CC) $(DEPS) $(CFLAGS) -o build/main src/main.c
+	$(CC) $(CFLAGS) -o build/main.out src/main.c
 
-# Run the main.c file from the build directory
+# Run the main output file from the build directory
 run:
-	./build/main
+	./build/main.out
